@@ -1,10 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>HomeForm.ui.qml</file>
-        <file>Account.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>SettingsForm.ui.qml</file>
-        <file>GameManagementForm.ui.qml</file>
+        <file>images/background018.jpg</file>
+        <file>images/background4.jpg</file>
+        <file>qml/Account.ui.qml</file>
+        <file>qml/GameManagementForm.ui.qml</file>
+        <file>qml/HomeForm.ui.qml</file>
+        <file>qml/main.qml</file>
+        <file>qml/SettingsForm.ui.qml</file>
     </qresource>
 </RCC>

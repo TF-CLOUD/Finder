@@ -8,11 +8,10 @@ Page {
 
     Image {
         id: backgroundimage
-        source: "images\background018.jpg"
+        source: "qrc:/images/background018.jpg"
         mirror: false
         width: Window.width
         height: Window.height
-        fillMode: image.PreserveAspectFit
     }
     Label {
         text: qsTr("Debug Version")

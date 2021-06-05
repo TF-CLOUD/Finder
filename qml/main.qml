@@ -42,7 +42,7 @@ ApplicationWindow {
                 text: qsTr("ACCOUNT")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Account.ui.qml")
+                    stackView.push("qrc:/qml/Account.ui.qml")
                     drawer.close()
                 }
             }
@@ -50,7 +50,7 @@ ApplicationWindow {
                 text: qsTr("GAME")
                 width: parent.width
                 onClicked: {
-                    stackView.push("GameManagementForm.ui.qml")
+                    stackView.push("qrc:/qml/GameManagementForm.ui.qml")
                     drawer.close()
                 }
             }
@@ -58,7 +58,7 @@ ApplicationWindow {
                 text:qsTr("SETTINGS")
                 width: parent.width
                 onClicked: {
-                    stackView.push("SettingsForm.ui.qml")
+                    stackView.push("qrc:/qml/SettingsForm.ui.qml")
                     drawer.close()
                 }
             }
@@ -67,7 +67,7 @@ ApplicationWindow {
 
     StackView {
         id: stackView
-        initialItem: "HomeForm.ui.qml"
+        initialItem: "qrc:/qml/HomeForm.ui.qml"
         anchors.fill: parent
     }
 }
