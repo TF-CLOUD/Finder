@@ -1,1 +1,2 @@
-# Finder A Cross-platform, beautiful, high performance Minecraft Launcher
+# Finder   
+## A Cross-platform, beautiful, high performance Minecraft Launcher
