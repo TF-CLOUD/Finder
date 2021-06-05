@@ -1,12 +1,12 @@
-import QtQuick 2.12
+import QtQuick 2.4
 import QtQuick.Controls 2.5
 
 ApplicationWindow {
     id: window
-    width: 640
-    height: 480
+    width: 1300
+    height: 751
     visible: true
-    title: qsTr("Stack")
+    title: qsTr("Finder")
 
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
@@ -32,25 +32,33 @@ ApplicationWindow {
 
     Drawer {
         id: drawer
-        width: window.width * 0.66
+        width: window.width * 0.3
         height: window.height
 
         Column {
             anchors.fill: parent
 
             ItemDelegate {
-                text: qsTr("Page 1")
+                text: qsTr("ACCOUNT")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Page1Form.ui.qml")
+                    stackView.push("Account.ui.qml")
                     drawer.close()
                 }
             }
             ItemDelegate {
-                text: qsTr("Page 2")
+                text: qsTr("GAME")
                 width: parent.width
                 onClicked: {
-                    stackView.push("Page2Form.ui.qml")
+                    stackView.push("GameManagementForm.ui.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate{
+                text:qsTr("SETTINGS")
+                width: parent.width
+                onClicked: {
+                    stackView.push("SettingsForm.ui.qml")
                     drawer.close()
                 }
             }
@@ -63,3 +71,9 @@ ApplicationWindow {
         anchors.fill: parent
     }
 }
+
+/*##^##
+Designer {
+    D{i:0;formeditorZoom:0.9}
+}
+##^##*/
