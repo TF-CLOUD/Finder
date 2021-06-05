@@ -8,7 +8,7 @@ Page {
 
     Image {
         id: backgroundimage
-        source: "background018.jpg"
+        source: "images\background018.jpg"
         mirror: false
         width: Window.width
         height: Window.height
