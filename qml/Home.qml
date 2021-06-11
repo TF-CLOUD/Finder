@@ -1,5 +1,5 @@
-import QtQuick 2.4
-import QtQuick.Controls 2.5
+import QtQuick 2.0
+import QtQuick.Controls 2.0
 
 Page {
     width: Window.width
@@ -22,9 +22,10 @@ Page {
         id: button
         x: Window.width * 0.8
         y: Window.height * 0.8
-        width: Window.width * 0.15
-        height: Window.height * 0.07
+       width: Window.width * 0.15
+       height: Window.height * 0.07
         text: qsTr("Start Gaming")
+        onClicked: comboBox
     }
 
     ComboBox {
@@ -33,6 +34,7 @@ Page {
         y: Window.height * 0.8 - button.height
         width: button.width
         height: button.height
+        model: ["First", "Second", "Third"]
     }
 }
 

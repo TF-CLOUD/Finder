@@ -3,10 +3,10 @@
         <file>qtquickcontrols2.conf</file>
         <file>images/background018.jpg</file>
         <file>images/background4.jpg</file>
-        <file>qml/Account.ui.qml</file>
-        <file>qml/GameManagementForm.ui.qml</file>
-        <file>qml/HomeForm.ui.qml</file>
+        <file>qml/Account.qml</file>
+        <file>qml/Game.qml</file>
+        <file>qml/Home.qml</file>
         <file>qml/main.qml</file>
-        <file>qml/SettingsForm.ui.qml</file>
+        <file>qml/Settings.qml</file>
     </qresource>
 </RCC>

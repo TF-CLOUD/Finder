@@ -1,6 +1,5 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.5
-
+import QtQuick 2.0
+import QtQuick.Controls 2.0
 Page {
     id: page
     width: Window.width
@@ -9,9 +8,5 @@ Page {
     title: qsTr("Launcher Settings")
 }
 
-/*##^##
-Designer {
-    D{i:0;formeditorZoom:0.75}
-}
-##^##*/
+
 

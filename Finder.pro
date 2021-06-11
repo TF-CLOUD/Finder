@@ -27,3 +27,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
 
+HEADERS += \
+    headers/launch/launch.h
+

@@ -1,5 +1,5 @@
-import QtQuick 2.4
-import QtQuick.Controls 2.5
+import QtQuick 2.0
+import QtQuick.Controls 2.0
 
 ApplicationWindow {
     id: window
@@ -42,7 +42,7 @@ ApplicationWindow {
                 text: qsTr("ACCOUNT")
                 width: parent.width
                 onClicked: {
-                    stackView.push("qrc:/qml/Account.ui.qml")
+                    stackView.push("qrc:/qml/Account.qml")
                     drawer.close()
                 }
             }
@@ -50,15 +50,22 @@ ApplicationWindow {
                 text: qsTr("GAME")
                 width: parent.width
                 onClicked: {
-                    stackView.push("qrc:/qml/GameManagementForm.ui.qml")
+                    stackView.push("qrc:/qml/Game.qml")
                     drawer.close()
                 }
             }
+/*            ItemDelegate{
+                text: qsTr("Plugin")
+                width:parent.width
+                onClicked: {
+                    stackView.push("qrc:/qml/")
+                }
+            }*/
             ItemDelegate{
                 text:qsTr("SETTINGS")
                 width: parent.width
                 onClicked: {
-                    stackView.push("qrc:/qml/SettingsForm.ui.qml")
+                    stackView.push("qrc:/qml/Settings.qml")
                     drawer.close()
                 }
             }
@@ -67,7 +74,7 @@ ApplicationWindow {
 
     StackView {
         id: stackView
-        initialItem: "qrc:/qml/HomeForm.ui.qml"
+        initialItem: "qrc:/qml/Home.qml"
         anchors.fill: parent
     }
 }

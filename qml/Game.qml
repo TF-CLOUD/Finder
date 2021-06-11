@@ -1,8 +1,9 @@
-import QtQuick 2.4
-import QtQuick.Controls 2.5
+import QtQuick 2.0
+import QtQuick.Controls 2.0
 
 Page {
     id: gamemanagementpage
     width: Window.width
     height: Window.height
+    title: qsTr("Game List")
 }
